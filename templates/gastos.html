@@ -1,0 +1,213 @@
+{% extends 'blank.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+    <!-- Page Heading -->
+    <h1 class="h3 mb-4 text-gray-800">Gastos
+    </h1>
+    <div class="row">
+
+        <div class="col-lg-4 ">
+            <!-- Default Card Example -->
+            <div class="card mb-4" >
+                <div class="card-header">
+                    Ingresar Nuevo gasto
+                </div>
+
+                <div class="card-body">
+
+                    <form>
+                        <div class="form-group">
+                            <label for="">producto</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">cantidad</label>
+                            <input type="number" class="form-control" id="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">total</label>
+                            <input type="number" class="form-control" id="" readonly value="500">
+                        </div>
+
+                        <button type="submit" class="btn btn-secondary">agregar</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+      <div class="col-lg-4 ">
+        <!-- Default Card Example -->
+        <div class="card mb-4" >
+            <div class="card-header">
+                Ingresar nueva perdida
+            </div>
+
+            <div class="card-body">
+
+                <form>
+                    <div class="form-group">
+                        <label for="">producto</label>
+                        <input type="text" class="form-control" id="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">cantidad</label>
+                        <input type="number" class="form-control" id="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">total</label>
+                        <input type="number" class="form-control" id="">
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary">agregar</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+        <div class="col-lg-4" >
+            <!-- Default Card Example -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    Ingresar Nueva merma
+                </div>
+
+                <div class="card-body" >
+
+                    <form>
+                        <div class="form-group">
+                            <label for="">Nombre</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Apellidos</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">edad</label>
+                            <input type="number" class="form-control" id="">
+                        </div>
+
+                        <button type="submit" class="btn btn-secondary">agregar</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-12">
+            <!-- Default Card Example -->
+            <div class="card mb-4">
+                <div class="card-header">
+                  Estado de resultado
+                </div>
+
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">cuenta</th>
+                                <th scope="col">detalle</th>
+                                <th scope="col">$</th>
+                            
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">ventas</th>
+                                <td></td>
+                                <td>$500</td>
+                                
+                            </tr>
+
+                            <tr>
+                                <th scope="row"></th>
+                                <td>devoluciones</td>
+                                <td>$-50</td>
+                                
+                            </tr>
+
+                            <tr>
+                                <th scope="row"></th>
+                                <td>descuento</td>
+                                <td>$-50</td>
+                                
+                            </tr>
+
+                            <tr>
+                                <th scope="row">ventas netas</th>
+                                <td></td>
+                                <td>$400</td>
+                                
+                            </tr>
+
+                            <tr>
+                                <th scope="row"></th>
+                                <td>costos</td>
+                                <td>$-150</td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">utilidad bruta</th>
+                                <td></td>
+                                <td>$250</td>
+                                
+                            </tr>
+
+                            <tr>
+                                <th scope="row">costos</th>
+                                <td></td>
+                                <td>$-100</td>
+                                
+                            </tr>
+
+                            <tr>
+                                <th scope="row">gastos</th>
+                                <td></td>
+                                <td>$-50</td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>impuesto</td>
+                                <td>$-50</td>
+                                
+                            </tr>
+
+                            <tr class="bg-secondary" style="color: white;">
+                                <th scope="row">utilidad neta</th>
+                                <td></td>
+                                <td>$50</td>
+                               
+                                <td>
+                                     <button class="btn btn-warning">descargar</button>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /.container-fluid -->
+
+{% endblock %}
